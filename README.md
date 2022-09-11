@@ -50,3 +50,11 @@ TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for C:\Othe
   code: 'ERR_UNKNOWN_FILE_EXTENSION'
 }
 ```
+
+## Notes
+
+I work with NodeJS 16.14.2. The command below works well:
+
+```bash
+NODE_OPTIONS=\"--loader ts-node/esm\" npm exec mikro-orm database:create
+```
